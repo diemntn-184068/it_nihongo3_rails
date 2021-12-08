@@ -11,15 +11,15 @@
 </p>
 
 <p>
+  <strong>Detail:</strong>
+  <%= @book.detail %>
+</p>
+
+<p>
   <strong>Image:</strong>
   <% if @book.image.attached? %>
     <%= image_tag @book.image %>
   <% end %>
-</p>
-
-<p>
-  <strong>Detail:</strong>
-  <%= @book.detail %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
